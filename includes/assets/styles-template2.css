@@ -1,0 +1,289 @@
+svg#psp-close-x {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: darkgray !important;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    padding: 6px;
+    box-sizing: content-box;
+    border-radius: 3px;
+    fill: white !important;
+    border: solid white 0px;
+    box-shadow: black 0px 0px 0px 0px;
+}
+
+#psp-overlay-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 9999995;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#psp-overlay {
+    position: relative;
+    z-index: 9999994;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: max-content;
+    background-color: transparent;
+    padding: 0;
+    max-width: 95%;
+    border-radius: 0px;
+    display:block;
+}
+
+#psp-verify-form {
+    margin-bottom: 1vh !important;
+    margin-top: 2vh !important;
+}
+
+#psp-overlay .disclaimer {
+    max-width: 800px;
+    margin: 10px auto .5em;
+}
+
+#psp-overlay img {
+    max-width: 100%;
+    max-height: 50vh;
+    display: inline-block;
+}
+
+#psp-overlay input:not([type=checkbox]) {
+    border-color: transparent;
+    border-width: 0;
+    width: 250px;
+    padding: 15px 0;
+    line-height: initial;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    float: none !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#psp-overlay input:focus:not([type=checkbox]) {
+    outline: none;
+    box-shadow: 0px 0px 12px 1px cyan;
+}
+
+#psp-overlay input:hover:not([type=checkbox]) {
+    box-shadow: 0px 0px 3px 1px blanchedalmond;
+    text-decoration: none !important;
+}
+
+#psp-overlay h1 {
+    font-size: 28px;
+    font-weight: 400;
+    background:none !important;
+    margin: 2vh 5px 2vh;
+    padding: 0px 0px 0px;
+    color: white;
+}
+
+#psp-overlay p {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 400;
+    background:none !important;
+    padding: 0px;
+    margin: 8px auto 10px;
+    max-width: 800px;
+    color: white;
+}
+
+#psp-overlay .submit {
+    margin-bottom: 0;
+}
+
+.psp_buttons input {
+    text-transform: initial;
+}
+
+#psp-overlay input[type=text] {
+    width: 50px;
+    outline: none;
+}
+
+#psp-overlay #psp_verify_y {
+    width: 70px;
+}
+
+.psp-error {
+    padding: 0 12px 12px;
+    background:none !important;
+    color: #cc0000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+#psp_confirm_age {
+    background-color: #656565;
+    margin: 15px 0 15px;
+    max-width: 98%;
+}
+
+#psp_not_confirm_age {
+    background-color: #cc3232;
+}
+
+#psp_verify_form label {
+    font-size: 12px !important;
+    font-weight: normal !important;
+    color: #FFF !important;
+}
+
+#psp-overlay input[type=checkbox] {
+    width: auto !important;
+    margin-top: 1em;
+    vertical-align: initial;
+        cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    #psp-overlay {
+        padding: 0;
+        width: 95%;
+        max-width: 95%;
+        max-height: 100vh;
+    }
+
+    #psp-overlay h1 {
+        font-size: 28px;
+    }
+
+    #psp-overlay p {
+        max-width: 90%;
+        margin: .1em auto 0px;
+        padding: 0px;
+    }
+
+    #psp-overlay .disclaimer {
+        max-width: 90%;
+    }
+
+    #psp-overlay h2 {
+        font-size: 22px;
+        margin: 15px 0px 12px;
+    }
+
+    .psp-error {
+        padding: 0 10px 10px;
+        font-size: 16px;
+    }
+
+    #psp-overlay img {
+        max-width: 100%;
+        max-height: 50vh;
+    }
+
+    #psp-overlay input[type=checkbox] {
+        margin-top: 1em;
+        height: 10px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #psp-overlay h1 {
+        font-size: 20px;
+    }
+
+    #psp-overlay p {
+        font-size: 16px;
+    }
+
+    #psp-overlay h2 {
+        font-size: 18px;
+        margin: 15px 0px 10px;
+    }
+
+    .psp-error {
+        padding: 0 10px 8px;
+        font-size: 14px;
+    }
+
+    #psp-overlay img {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    #psp-overlay .submit {
+        font-size: small;
+    }
+
+    #psp-overlay input[type=checkbox] {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-height: 415px) {
+    #psp-overlay {
+        padding: 0;
+        width: 75%;
+    }
+    
+    #psp-overlay h1 {
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    #psp-overlay p {
+        font-size: 15px;
+        margin: 0px auto;
+    }
+
+    #psp-overlay .disclaimer {
+        margin: 10px auto 0px;
+    }
+
+    #psp-overlay .disclaimer p {
+        font-size: 9px;
+    }
+
+    #psp-overlay h2 {
+        font-size: 18px;
+        margin: 10px auto 10px;
+    }
+
+    #psp-overlay img {
+        max-width: 100%;
+        max-height: 95vh;
+    }
+    
+    #psp-overlay input:not([type=checkbox]) {
+        padding: 12px 0;
+    }
+
+    #psp-overlay .submit {
+        font-size: small;
+    }
+
+    #psp-overlay input[type=checkbox] {
+        margin-top: .5em;
+        height: 10px;
+    }
+    .psp-error {
+        padding: 0 10px 8px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-height: 320px) {
+    #psp-overlay img {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+}
